@@ -1,0 +1,109 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1982703953178228}
+  m_IsPrefabParent: 1
+--- !u!1 &1982703953178228
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4974693615345858}
+  - component: {fileID: 114162626335650756}
+  - component: {fileID: 114990871274727598}
+  m_Layer: 0
+  m_Name: FarmManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4974693615345858
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1982703953178228}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114162626335650756
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1982703953178228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 505661aede593bd49b14d286ab3f349a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camPos:
+  - {x: 0, y: 0}
+  - {x: 0, y: -17}
+  - {x: 0, y: 17}
+  monPos:
+  - {x: -3, y: -3}
+  - {x: -3, y: -6}
+  - {x: 3, y: 3}
+  - {x: 3, y: 6}
+  curState: 0
+  inMenu: 0
+  deployableDec:
+  - {fileID: 11400000, guid: 8b6cab21cd2ef1242816cb5591e0774c, type: 2}
+  deployedDec: []
+  ownedMon: []
+  seenMon: []
+  curMon: {fileID: 0}
+  curDecSpot: {fileID: 0}
+  curMonPanel: {fileID: 0}
+  decSpotPanel: {fileID: 0}
+  evoPanel: {fileID: 0}
+  battlePanel: {fileID: 0}
+  day: {r: 0.5808823, g: 0.7438725, b: 1, a: 1}
+  night: {r: 0, g: 0.08578429, b: 0.2205882, a: 1}
+  isDay: 0
+  lists: {fileID: 11400000, guid: a0e4455d19f56734192f61ec4820468b, type: 2}
+  lastLogin: 
+  battleButton: {fileID: 0}
+  monPrefab: {fileID: 1679373136432950, guid: 552459fe8948e384896f1022d6278386, type: 2}
+  projectile: {fileID: 1545338489853704, guid: 0aeff67696538af4f9d99400066f2165, type: 2}
+  serializedInts: 20
+  decDropdown: {fileID: 0}
+  evoDropdown: {fileID: 0}
+  options: []
+--- !u!114 &114990871274727598
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1982703953178228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1da61da240350e2418593a5795a977d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  curState: 3
+  enemySpecies: {fileID: 11400000, guid: 288364c0e4a98084692f305e15b057df, type: 2}
+  eStatMods: 010000000000000000000000000000000000000000000000000000000000000000000000
+  eMonBattler: {fileID: 0}
+  pMonBattler: {fileID: 0}
+  eHealth: {fileID: 0}
+  pHealth: {fileID: 0}
+  enemyTimer: 0
+  playerTimer: 0
+  playerMon: {fileID: 0}

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f003544c11edcce45af6bf4465393cfc, type: 3}
+  m_Name: BaseSpecies
+  m_EditorClassIdentifier: 
+  speciesNumber: 0
+  speciesName: Error
+  speciesDesc: Only appears if a evolution species ID was invalid
+  baseStats: 000000000000000000000000000000000000000000000000000000000000000000000000
+  overworld: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  speciesPortrait: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
+  evolutions: []
+  statReqs: 000000000000000000000000000000000000000000000000000000000000000000000000
+  decReq: {fileID: 0}

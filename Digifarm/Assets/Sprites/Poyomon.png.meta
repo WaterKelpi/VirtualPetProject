@@ -1,0 +1,623 @@
+fileFormatVersion: 2
+guid: 38ed71fef97d31549946a2f1df9fc10a
+timeCreated: 1520570647
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Poyomon_0
+    21300002: Poyomon_1
+    21300004: Poyomon_2
+    21300006: Poyomon_3
+    21300008: Poyomon_4
+    21300010: Poyomon_5
+    21300012: Poyomon_6
+    21300014: Poyomon_7
+    21300016: Poyomon_8
+    21300018: Poyomon_9
+    21300020: Poyomon_10
+    21300022: Poyomon_11
+    21300024: Poyomon_12
+    21300026: Poyomon_13
+    21300028: Poyomon_14
+    21300030: Poyomon_15
+    21300032: Poyomon_16
+    21300034: Poyomon_17
+    21300036: Poyomon_18
+    21300038: Poyomon_19
+    21300040: Poyomon_20
+    21300042: Poyomon_21
+    21300044: Poyomon_22
+    21300046: Poyomon_23
+    21300048: Poyomon_24
+    21300050: Poyomon_25
+    21300052: Poyomon_26
+    21300054: Poyomon_27
+    21300056: Poyomon_28
+    21300058: Poyomon_29
+    21300060: Poyomon_30
+    21300062: Poyomon_31
+    21300064: Poyomon_32
+    21300066: Poyomon_33
+    21300068: Poyomon_34
+    21300070: Poyomon_35
+    21300072: Poyomon_36
+    21300074: Poyomon_37
+    21300076: Poyomon_38
+    21300078: Poyomon_39
+    21300080: Poyomon_40
+    21300082: Poyomon_41
+    21300084: Poyomon_42
+    21300086: Poyomon_43
+    21300088: Poyomon_44
+    21300090: Poyomon_45
+    21300092: Poyomon_46
+    21300094: Poyomon_47
+    21300096: Poyomon_48
+    21300098: Poyomon_49
+    21300100: Poyomon_50
+    21300102: Poyomon_51
+    21300104: Poyomon_52
+    21300106: Poyomon_53
+    21300108: Poyomon_54
+    21300110: Poyomon_55
+    21300112: Poyomon_56
+    21300114: Poyomon_57
+    21300116: Poyomon_58
+    21300118: Poyomon_59
+    21300120: Poyomon_60
+    21300122: Poyomon_61
+    21300124: Poyomon_62
+    21300126: Poyomon_63
+    21300128: Poyomon_64
+    21300130: Poyomon_65
+    21300132: Poyomon_66
+    21300134: Poyomon_67
+    21300136: Poyomon_68
+    21300138: Poyomon_69
+    21300140: Poyomon_70
+    21300142: Poyomon_71
+    21300144: Poyomon_72
+    21300146: Poyomon_73
+    21300148: Poyomon_74
+    21300150: Poyomon_75
+    21300152: Poyomon_76
+    21300154: Poyomon_77
+    21300156: Poyomon_78
+    21300158: Poyomon_79
+    21300160: Poyomon_80
+    21300162: Poyomon_81
+    21300164: Poyomon_82
+    21300166: Poyomon_83
+    21300168: Poyomon_84
+    21300170: Poyomon_85
+    21300172: Poyomon_86
+    21300174: Poyomon_87
+    21300176: Poyomon_88
+    21300178: Poyomon_89
+    21300180: Poyomon_90
+    21300182: Poyomon_91
+    21300184: Poyomon_92
+    21300186: Poyomon_93
+    21300188: Poyomon_94
+    21300190: Poyomon_95
+    21300192: Poyomon_96
+    21300194: Poyomon_97
+    21300196: Poyomon_98
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 16
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Poyomon_3
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 397
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Poyomon_4
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 397
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Poyomon_5
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 396
+        width: 35
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Poyomon_6
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 395
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Poyomon_7
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 375
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Poyomon_8
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 376
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Poyomon_9
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 376
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Poyomon_10
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 374
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Poyomon_38
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 304
+        width: 33
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Poyomon_62
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 280
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Poyomon_63
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 286
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Poyomon_64
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 294
+        width: 40
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Poyomon_71
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 197
+        width: 33
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Poyomon_72
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 190
+        width: 40
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Poyomon_82
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 173
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Poyomon_83
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 172
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Poyomon_84
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 182
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Poyomon_85
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 182
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Poyomon_86
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 182
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Poyomon_87
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 151
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Poyomon_88
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 151
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Poyomon_89
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 151
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Poyomon_90
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 122
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Poyomon_91
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 122
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Poyomon_92
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 122
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Poyomon_93
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 91
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Poyomon_94
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 91
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Poyomon_95
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 91
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Poyomon_96
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 66
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Poyomon_97
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 44
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Poyomon_98
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 44
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

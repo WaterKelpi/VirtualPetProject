@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f003544c11edcce45af6bf4465393cfc, type: 3}
+  m_Name: Plesiomon
+  m_EditorClassIdentifier: 
+  speciesNumber: 12
+  speciesName: Plesiomon
+  speciesDesc: 
+  baseStats: 000000000000000000000000000000001e0000001e0000001e0000001e0000001e000000
+  overworld: {fileID: 21300010, guid: 7f7c32349e5a6574e83bca23cc8d151d, type: 3}
+  speciesPortrait: {fileID: 21300000, guid: 7f7c32349e5a6574e83bca23cc8d151d, type: 3}
+  evolutions: 
+  statReqs: 000000000000000000000000000000000000000000000000000000000000000000000000
+  decReq: {fileID: 0}
+  levelCoefficient: 1.4
+  egg: 0
+  hatchtime: 0

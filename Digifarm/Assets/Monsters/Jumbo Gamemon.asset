@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f003544c11edcce45af6bf4465393cfc, type: 3}
+  m_Name: Jumbo Gamemon
+  m_EditorClassIdentifier: 
+  speciesNumber: 15
+  speciesName: Jumbo Gamemon
+  speciesDesc: 
+  baseStats: 000000000000000000000000000000003200000032000000320000003200000000000000
+  overworld: {fileID: 21300018, guid: 81bc6bddcd794fa46aee0fd2ca1e9ca1, type: 3}
+  speciesPortrait: {fileID: 21300000, guid: 81bc6bddcd794fa46aee0fd2ca1e9ca1, type: 3}
+  evolutions: 
+  statReqs: 000000000000000000000000000000000000000000000000000000000000000000000000
+  decReq: {fileID: 0}
+  levelCoefficient: 0.8
+  egg: 0
+  hatchtime: 0

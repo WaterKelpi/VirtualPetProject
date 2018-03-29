@@ -1,0 +1,426 @@
+fileFormatVersion: 2
+guid: d5371850779c92040bff5be24e8ceda2
+timeCreated: 1520570560
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Ikkakumon_0
+    21300002: Ikkakumon_1
+    21300004: Ikkakumon_2
+    21300006: Ikkakumon_3
+    21300008: Ikkakumon_4
+    21300010: Ikkakumon_5
+    21300012: Ikkakumon_6
+    21300014: Ikkakumon_7
+    21300016: Ikkakumon_8
+    21300018: Ikkakumon_9
+    21300020: Ikkakumon_10
+    21300022: Ikkakumon_11
+    21300024: Ikkakumon_12
+    21300026: Ikkakumon_13
+    21300028: Ikkakumon_14
+    21300030: Ikkakumon_15
+    21300032: Ikkakumon_16
+    21300034: Ikkakumon_17
+    21300036: Ikkakumon_18
+    21300038: Ikkakumon_19
+    21300040: Ikkakumon_20
+    21300042: Ikkakumon_21
+    21300044: Ikkakumon_22
+    21300046: Ikkakumon_23
+    21300048: Ikkakumon_24
+    21300050: Ikkakumon_25
+    21300052: Ikkakumon_26
+    21300054: Ikkakumon_27
+    21300056: Ikkakumon_28
+    21300058: Ikkakumon_29
+    21300060: Ikkakumon_30
+    21300062: Ikkakumon_31
+    21300064: Ikkakumon_32
+    21300066: Ikkakumon_33
+    21300068: Ikkakumon_34
+    21300070: Ikkakumon_35
+    21300072: Ikkakumon_36
+    21300074: Ikkakumon_37
+    21300076: Ikkakumon_38
+    21300078: Ikkakumon_39
+    21300080: Ikkakumon_40
+    21300082: Ikkakumon_41
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 16
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Ikkakumon_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 308
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Ikkakumon_1
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 274
+        width: 29
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Ikkakumon_2
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 177
+        width: 105
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Ikkakumon_3
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 177
+        width: 103
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Ikkakumon_4
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 177
+        width: 107
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Ikkakumon_5
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 274
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Ikkakumon_6
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 275
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Ikkakumon_7
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 208
+        width: 29
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Ikkakumon_8
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 208
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Ikkakumon_9
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 209
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Ikkakumon_10
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 38
+        width: 97
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Ikkakumon_11
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 144
+        width: 30
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Ikkakumon_12
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 142
+        width: 28
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Ikkakumon_13
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 145
+        width: 31
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Ikkakumon_14
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 33
+        width: 111
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Ikkakumon_15
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 78
+        width: 30
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Ikkakumon_16
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 76
+        width: 28
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Ikkakumon_17
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 79
+        width: 31
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Ikkakumon_29
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 8
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Ikkakumon_30
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 8
+        width: 31
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Ikkakumon_31
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 8
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
