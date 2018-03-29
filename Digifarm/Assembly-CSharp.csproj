@@ -62,6 +62,7 @@
      <Compile Include="Assets\projectileScript.cs" />
      <Compile Include="Assets\saveLoadManager.cs" />
      <Compile Include="Assets\targetHandling.cs" />
+     <Compile Include="Assets\targetPracticeHandling.cs" />
      <Compile Include="Assets\topMenu.cs" />
      <None Include="Assets\SpriteRippers.txt" />
  <Reference Include="UnityEngine.UI">
