@@ -10,6 +10,8 @@ public class fmScript : MonoBehaviour {
 	public bool inMenu;
 	public List<decorationObject> deployableDec,deployedDec;
 	public List<baseMonster> ownedMon;
+	public baseMonster egg;
+	public baseSpecies[] eggs;
 	public List<baseSpecies> seenMon;
 	public baseMonster curMon;
 	public decSpotHandling curDecSpot;
@@ -45,6 +47,12 @@ public class fmScript : MonoBehaviour {
 			RefreshDec(decDropdown,deployableDec);
 		}
 		saveLoadManager.LoadPlayer(this);
+		for (int i = 0; i < 4; i++) {
+			ownedMon [i].transform.position = monPos [i];
+		}
+		for (int i = 4; i < ownedMon.Count; i++) {
+			ownedMon [i].transform.position = new Vector2 (-9, 0);
+		}
 		MoveCamera();
 	}
 
@@ -96,6 +104,9 @@ public class fmScript : MonoBehaviour {
 		if(curMonPanel.activeSelf){
 			if(curMon != null){
 				InputField nameInput = GameObject.Find("nameInput").GetComponent<InputField>();
+				if(curMon.species.egg){
+					nameInput.interactable = false;
+				}
 				Text monName = GameObject.Find("monName").GetComponent<Text>();
 				if(nameInput.isFocused){
 					monName.text = nameInput.text+"|";
@@ -260,7 +271,7 @@ public class fmScript : MonoBehaviour {
 			trainingTimer -= Time.deltaTime;
 		}
 		#endregion
-
+		#region Training
 		if(curState == playerState.training){
 			#region TargetPractice
 			GameObject backSprite = GameObject.Find("curMonBackSprite");
@@ -272,7 +283,11 @@ public class fmScript : MonoBehaviour {
 			}
 			#endregion
 		}
+		#endregion
 
+		if (egg == null) {
+			AddEgg ();
+		}
 
 	}
 
@@ -404,17 +419,20 @@ public class fmScript : MonoBehaviour {
 	public void AddMonster(){
 		GameObject newMon = Instantiate(monPrefab,Vector2.zero,Quaternion.identity);
 		ownedMon.Add(newMon.GetComponent<baseMonster>());
-		int numMon = ownedMon.Count-1;
-		newMon.transform.position = monPos[numMon];
-
+		newMon.transform.position = new Vector2 (-9, 0);
 	}
 	//Add specific monster
 	public void AddMonster(baseSpecies species){
 		GameObject newMon = Instantiate(monPrefab,Vector2.zero,Quaternion.identity);
 		ownedMon.Add(newMon.GetComponent<baseMonster>());
 		newMon.GetComponent<baseMonster>().species = species;
-		int numMon = ownedMon.Count-1;
-		newMon.transform.position = monPos[numMon];
+		newMon.transform.position = new Vector2 (-9, 0);
+	}
+
+	void AddEgg(){
+		egg = Instantiate(monPrefab,Vector2.zero,Quaternion.identity).GetComponent<baseMonster>();
+		egg.species = eggs [Random.Range (0, eggs.Length)];
+		egg.hatchTime = egg.species.hatchtime;
 	}
 		
 }

@@ -50,6 +50,8 @@ public class baseMonster : MonoBehaviour {
 			warmth = Mathf.Clamp(warmth,1,5);
 			hatchTime -= Time.deltaTime*warmth;
 			if(hatchTime <= 0 && curMon && fm.inMenu){
+				fm.egg = null;
+				fm.ownedMon.Add(this);
 				Evolve(Random.Range(0,species.evolutions.Length));
 			}
 		}
