@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Every Decoration has the following
 decName - name of the decoration
 decDescription - not yet implemented, but essentiall flavor text
@@ -13,4 +14,21 @@ Right click in the file explorere, click baseDecoration
 Alternatively copy and paste a furniture piece you'd like to work off of
 
 Currently integration of furniture is poor, but if you'd like to make sure it works go to the FarmManager object in the Farm scene and increase the length
+=======
+Every Decoration has the following
+decName - name of the decoration
+decDescription - not yet implemented, but essentiall flavor text
+decSprite - what the decoration looks like on the farm and in menus
+baseSprite - I think you don't have to worry about this one. But incase it appears as null in the inspector there's a sprite called decSpot
+	in the assets folder. Put that there.
+animations - currenlty unused. I'll update this section when nessecary.
+statBoosts - array of stats. Never fill out 0,1, or 3. The rest are fine, these numbers are given to the monster upon level up.
+
+TO CREATE A DECORATION
+
+Right click in the file explorere, click baseDecoration
+Alternatively copy and paste a furniture piece you'd like to work off of
+
+Currently integration of furniture is poor, but if you'd like to make sure it works go to the FarmManager object in the Farm scene and increase the length
+>>>>>>> ART
 	the ownedDec list and drag and drop the new decoration in it.

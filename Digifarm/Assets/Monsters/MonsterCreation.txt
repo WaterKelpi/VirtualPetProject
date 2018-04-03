@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Every Monster has the following
 
 speciesNumber - This is used in order to call the species on load and on evolution, maker sure all monster numbers are unique.
@@ -28,4 +29,36 @@ Right click in the assets folder explorer and click baseSpecies and fill out the
 Alternatively copy and paste a monster you want to work from and edit
 
 Once the stats and sprites are set you'll need to add it to the global list. In the assets folder there is an object called GLOBAL LIST
+=======
+Every Monster has the following
+
+speciesNumber - This is used in order to call the species on load and on evolution, maker sure all monster numbers are unique.
+	I don't know what'll happen if they're not, but I don't think it'll break anything
+speciesName - self explanitory, it can be whatever you want it to be
+speciesDesc - currently unused, but if you want you can put something here for when it does get used. It's going to basically just be flavor text
+baseStats - an array of stats that represent level, xp, totalXp , hp, maxhp, atk, def, speed, and happiness. Only set maxhp,atk,def,
+	and speed since just being a certain species will never give benefits to the other stats
+overworld - This is the sprite that will display on the farm screen when out of menus. The current sprites have a unit square of 16x16 pixels
+speciesPortrait = This is the sprite that will display when a monster is selected/in battle/ in training. There's no current unit square set,
+	that's up to artists and how they want to display the scale of the monsters. currently the unit square is 16x16
+evolutions = This is an array that contains the speciesNumbers that the monster can evolve in to
+
+Next is the Evolution Requirements. These are checked when something is trying to evolve into this species
+
+statReqs - array laid out in similar fashion to baseStats, when a number is set the monster will check to see if its stat is equal to or higher than
+	that number. And if it's not the monster will be unable to evolve
+decorationObject - this is a decoration requirement. The monster checks if the object is deployed before evolving
+timeReq - 0 means no requirement, 1 means daytime, 2 means nighttime
+seenMon - checks to see if the seenMon is in the farmmanagaers seen Monsters before evolving
+
+
+levelCoefficient - how quickly a monster levels up less than one is fast, more than 1 is slow
+
+TO CREATE A MONSTER
+
+Right click in the assets folder explorer and click baseSpecies and fill out the fields
+Alternatively copy and paste a monster you want to work from and edit
+
+Once the stats and sprites are set you'll need to add it to the global list. In the assets folder there is an object called GLOBAL LIST
+>>>>>>> ART
 	when clicked on the inspector will have a list of monsters, increase the length of the list and add the new monster and it's now integrated
