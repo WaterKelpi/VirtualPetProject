@@ -50,18 +50,35 @@ public class baseMonster : MonoBehaviour {
 			warmth = Mathf.Clamp(warmth,1,5);
 			hatchTime -= Time.deltaTime*warmth;
 			if(hatchTime <= 0 && curMon && fm.inMenu){
+				fm.egg = null;
+				fm.ownedMon.Add(this);
 				Evolve(Random.Range(0,species.evolutions.Length));
+				if(fm.ownedMon.Count > 4){
+					transform.position = new Vector2 (-9, 0);
+				}else{
+					transform.position = fm.monPos[fm.ownedMon.Count-1];
+				}
 			}
 		}
 		#endregion
 		#region Getting Selected
-		if(Input.GetMouseButtonDown(0) && !fm.inMenu){
+		if(Input.GetMouseButtonUp(0) && !fm.inMenu){
 			RaycastHit2D hit = Physics2D.Raycast(new Vector2(Camera.main.ScreenToWorldPoint(Input.mousePosition).x,Camera.main.ScreenToWorldPoint(Input.mousePosition).y),Vector2.zero,0);
 			SelectMon(hit);
 		}
-		if(Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began && !fm.inMenu){
+		if(Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended && !fm.inMenu){
 			RaycastHit2D hit = Physics2D.Raycast(Input.GetTouch(0).position,Vector2.zero,0);
 			SelectMon(hit);
+		}
+		#endregion
+		#region Rubbing
+		if(Input.GetMouseButton(0) && Input.GetAxisRaw("Mouse X") != 0 ||Input.GetMouseButton(0) && Input.GetAxisRaw("Mouse Y") != 0 ){
+			RaycastHit2D hit = Physics2D.Raycast(new Vector2(Camera.main.ScreenToWorldPoint(Input.mousePosition).x,Camera.main.ScreenToWorldPoint(Input.mousePosition).y),Vector2.zero,0);
+			AddWarmth(hit);
+		}
+		if(Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Moved){
+			RaycastHit2D hit = Physics2D.Raycast(Input.GetTouch(0).position,Vector2.zero,0);
+			AddWarmth(hit);
 		}
 		#endregion
 		#region Updating Apearances
@@ -161,11 +178,19 @@ public class baseMonster : MonoBehaviour {
 				if(species.evolutions.Length > 0){
 					fm.RefreshEvo(fm.evoDropdown,species.evolutions);
 				}
+				fm.RefreshOwned(fm.ownedMonDropdown,fm.ownedMon);
 				fm.curMonPanel.SetActive(true);
 				curMon = true;
 			}
 		}else{
 			curMon = false;
+		}
+	}
+	void AddWarmth(RaycastHit2D hit){
+		if(hit){
+			if(hit.transform.gameObject == this.gameObject){
+				warmth += Time.deltaTime/10;
+			}
 		}
 	}
 }

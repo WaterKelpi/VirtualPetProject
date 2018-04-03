@@ -5,6 +5,7 @@ using UnityEngine;
 
 [CreateAssetMenu (menuName = "Decoration")]
 public class decorationObject : ScriptableObject {
+	public int decorationNumber;
 	public string decName,decDescription;
 	public Sprite decSprite,baseSprite;
 	public Animator animations;

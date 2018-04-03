@@ -1,17 +1,15 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\topMenu.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\fmScript.cs">
     <Files>
-      <File FileName="Assets\baseSpecies.cs" Line="1" Column="1" />
-      <File FileName="Assets\topMenu.cs" Line="8" Column="5" />
-      <File FileName="Assets\targetHandling.cs" Line="1" Column="1" />
-      <File FileName="Assets\projectileScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\fmScript.cs" Line="125" Column="75" />
-      <File FileName="Assets\baseMonster.cs" Line="81" Column="4" />
-      <File FileName="Assets\saveLoadManager.cs" Line="31" Column="97" />
-      <File FileName="Assets\battleHandling.cs" Line="1" Column="1" />
+      <File FileName="Assets\baseSpecies.cs" Line="7" Column="61" />
+      <File FileName="Assets\Editor\monsterListEditor.cs" Line="145" Column="21" />
+      <File FileName="Assets\globalLists.cs" Line="8" Column="47" />
+      <File FileName="Assets\decorationObject.cs" Line="12" Column="39" />
+      <File FileName="Assets\fmScript.cs" Line="494" Column="40" />
+      <File FileName="Assets\baseMonster.cs" Line="181" Column="54" />
       <File FileName="Assets\decSpotHandling.cs" Line="1" Column="1" />
-      <File FileName="Assets\decorationObject.cs" Line="1" Column="1" />
+      <File FileName="Assets\saveLoadManager.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -10,10 +10,12 @@ public class fmScript : MonoBehaviour {
 	public bool inMenu;
 	public List<decorationObject> deployableDec,deployedDec;
 	public List<baseMonster> ownedMon;
+	public baseMonster egg;
+	public baseSpecies[] eggs;
 	public List<baseSpecies> seenMon;
 	public baseMonster curMon;
 	public decSpotHandling curDecSpot;
-	public GameObject curMonPanel,decSpotPanel,evoPanel,battlePanel;
+	public GameObject curMonPanel,decSpotPanel,evoPanel,battlePanel,swapPanel;
 	public Color day,night;
 	public bool isDay;
 	string nightStart = "6:00:00 PM";
@@ -30,7 +32,7 @@ public class fmScript : MonoBehaviour {
 
 	public GameObject projectile;
 	public int serializedInts = 20;
-	[HideInInspector] public Dropdown decDropdown,evoDropdown;
+	[HideInInspector] public Dropdown decDropdown,evoDropdown,ownedMonDropdown;
 	[HideInInspector] public List<string> options;
 
 	private float trainingTimer;
@@ -40,11 +42,25 @@ public class fmScript : MonoBehaviour {
 		Screen.orientation = ScreenOrientation.Portrait;
 		decDropdown = decSpotPanel.transform.Find("decList").GetComponent<Dropdown>();
 		evoDropdown = evoPanel.transform.Find("evoDropdown").GetComponent<Dropdown>();
+		ownedMonDropdown = swapPanel.transform.Find("ownedMonDropdown").GetComponent<Dropdown>();
 		ownedMon = new List<baseMonster>();
 		if(deployableDec != null){
 			RefreshDec(decDropdown,deployableDec);
 		}
 		saveLoadManager.LoadPlayer(this);
+		if(ownedMon != null){
+			RefreshOwned(ownedMonDropdown,ownedMon);
+		}
+		for (int i = 0; i < ownedMon.Count; i++) {
+			if(i<4){
+				ownedMon [i].transform.position = monPos [i];
+			}
+		}
+		for (int i = 4; i < ownedMon.Count; i++) {
+			if(ownedMon[i] != null){
+				ownedMon [i].transform.position = new Vector2 (-9, 0);
+			}
+		}
 		MoveCamera();
 	}
 
@@ -70,12 +86,14 @@ public class fmScript : MonoBehaviour {
 			stamRegen = 0;
 		}
 		stamina = Mathf.Clamp(stamina,0,maxStamina);
+		Text staminaDisplay = GameObject.Find("Stamina").GetComponent<Text>();
+		staminaDisplay.text = "Stamina: "+ stamina;
 		#endregion
 		if(Input.GetKeyDown(KeyCode.Escape)){
-			if(inMenu && !evoPanel.activeSelf){
+			if(inMenu && !evoPanel.activeSelf&& !swapPanel.activeSelf){
 				closeMenus();
 			}else if(evoPanel.activeSelf){
-				CloseEvo();
+				CloseLayerTwo();
 			}
 			if(curState != playerState.farm){
 				curMon.TrainStat();
@@ -96,6 +114,9 @@ public class fmScript : MonoBehaviour {
 		if(curMonPanel.activeSelf){
 			if(curMon != null){
 				InputField nameInput = GameObject.Find("nameInput").GetComponent<InputField>();
+				if(curMon.species.egg){
+					nameInput.interactable = false;
+				}
 				Text monName = GameObject.Find("monName").GetComponent<Text>();
 				if(nameInput.isFocused){
 					monName.text = nameInput.text+"|";
@@ -224,7 +245,34 @@ public class fmScript : MonoBehaviour {
 				evoPanel.SetActive(false);
 			}
 		}
+		#endregion
+		#region Display Swap Panel
+		if(swapPanel.activeSelf){
+			if(curMon != null){
+				swapPanel.transform.Find("curMon").GetComponent<Image>().sprite = curMon.species.speciesPortrait;
+				Text curMonStats = swapPanel.transform.Find("curMonStats").GetComponent<Text>();
+				curMonStats.text = "";
+				curMonStats.text += "Species: "+curMon.species.speciesName;
+				curMonStats.text += "\nBase MaxHP: "+curMon.species.baseStats[4];
+				curMonStats.text += "\nBase ATK: "+curMon.species.baseStats[5];
+				curMonStats.text += "\nBase DEF: "+curMon.species.baseStats[6];
+				curMonStats.text += "\nBase SPD: "+curMon.species.baseStats[7];
 
+				baseSpecies evoMon = lists.speciesList.Find(x => x.speciesNumber == ownedMon[ownedMonDropdown.value].species.speciesNumber) ?? lists.speciesList[0];
+				swapPanel.transform.Find("swapMon").GetComponent<Image>().sprite = evoMon.speciesPortrait;
+				Text swapMonStats = swapPanel.transform.Find("swapMonStats").GetComponent<Text>();
+				swapMonStats.text = "";
+				swapMonStats.text += "Species: "+evoMon.speciesName;
+				swapMonStats.text += "\nBase MaxHP: "+evoMon.baseStats[4];
+				swapMonStats.text += "\nBase ATK: "+evoMon.baseStats[5];
+				swapMonStats.text += "\nBase DEF: "+evoMon.baseStats[6];
+				swapMonStats.text += "\nBase SPD: "+evoMon.baseStats[7];
+
+			}
+			else{
+				swapPanel.SetActive(false);
+			}
+		}
 		#endregion
 		#region Day/Night
 		if(System.DateTime.Compare(System.DateTime.Now,System.Convert.ToDateTime(nightStart)) > 0 || System.DateTime.Compare(System.DateTime.Now,System.Convert.ToDateTime(dayStart)) < 0){
@@ -260,7 +308,7 @@ public class fmScript : MonoBehaviour {
 			trainingTimer -= Time.deltaTime;
 		}
 		#endregion
-
+		#region Training
 		if(curState == playerState.training){
 			#region TargetPractice
 			GameObject backSprite = GameObject.Find("curMonBackSprite");
@@ -272,7 +320,11 @@ public class fmScript : MonoBehaviour {
 			}
 			#endregion
 		}
+		#endregion
 
+		if (egg == null) {
+			AddEgg ();
+		}
 
 	}
 
@@ -293,7 +345,7 @@ public class fmScript : MonoBehaviour {
 	public void CallEvolve(){
 		curMon.Evolve(evoDropdown.value);
 		evoDropdown.value = 0;
-		if(curMon.species.evolutions.Length == 0){CloseEvo();}
+		if(curMon.species.evolutions.Length == 0){CloseLayerTwo();}
 		RefreshEvo(evoDropdown,curMon.species.evolutions);
 	}
 
@@ -346,6 +398,22 @@ public class fmScript : MonoBehaviour {
 		}
 	}
 
+	public void RefreshOwned(Dropdown list, List<baseMonster> listToPull){
+		list.ClearOptions();
+		options.Clear();
+		Debug.Log(listToPull.Count);
+		foreach(baseMonster mon in listToPull){
+			options.Add(mon.monName);
+		}
+		if(options.Count > 0){
+			list.AddOptions(options);
+			list.interactable = true;
+		}else {
+			list.options.Add(new Dropdown.OptionData() {text = "None"});
+			list.interactable = false;
+		}
+	}
+
 	public void RemoveDecoration(){
 		decorationObject decoration = curDecSpot.curDec;
 		if(decoration != null){
@@ -380,11 +448,12 @@ public class fmScript : MonoBehaviour {
 		}
 	}
 
-	public void OpenEvo(){
-		evoPanel.SetActive(true);
+	public void OpenMenu(GameObject menu){
+		menu.SetActive(true);
 	}
-	public void CloseEvo(){
+	public void CloseLayerTwo(){
 		evoPanel.SetActive(false);
+		swapPanel.SetActive(false);
 	}
 
 	public void StartBattle(){
@@ -404,17 +473,35 @@ public class fmScript : MonoBehaviour {
 	public void AddMonster(){
 		GameObject newMon = Instantiate(monPrefab,Vector2.zero,Quaternion.identity);
 		ownedMon.Add(newMon.GetComponent<baseMonster>());
-		int numMon = ownedMon.Count-1;
-		newMon.transform.position = monPos[numMon];
-
+		newMon.transform.position = new Vector2 (-9, 0);
 	}
 	//Add specific monster
 	public void AddMonster(baseSpecies species){
 		GameObject newMon = Instantiate(monPrefab,Vector2.zero,Quaternion.identity);
 		ownedMon.Add(newMon.GetComponent<baseMonster>());
 		newMon.GetComponent<baseMonster>().species = species;
-		int numMon = ownedMon.Count-1;
-		newMon.transform.position = monPos[numMon];
+		newMon.transform.position = new Vector2 (-9, 0);
 	}
-		
+
+	public void AddEgg(){
+		egg = Instantiate(monPrefab,Vector2.zero,Quaternion.identity).GetComponent<baseMonster>();
+		egg.species = eggs [Random.Range (0, eggs.Length)];
+		egg.hatchTime = egg.species.hatchtime;
+	}
+
+	public void SwapMon(){
+		baseMonster temp = curMon;
+		ownedMon[ownedMon.FindIndex(x=> x == curMon)] = ownedMon[ownedMonDropdown.value];
+		ownedMon[ownedMonDropdown.value] = temp;
+		for (int i = 0; i < ownedMon.Count; i++) {
+			if(i<4){
+				ownedMon [i].transform.position = monPos [i];
+			}
+		}
+		for (int i = 4; i < ownedMon.Count; i++) {
+			if(ownedMon[i] != null){
+				ownedMon [i].transform.position = new Vector2 (-9, 0);
+			}
+		}
+	}
 }

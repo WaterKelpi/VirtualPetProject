@@ -9,11 +9,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 56f5de9b82ba1334d9d08a1bd27b8e62, type: 3}
-  m_Name: FireEgg
+  m_Name: Fire Egg
   m_EditorClassIdentifier: 
+  decorationNumber: 0
   decName: Fire Egg
-  decDescription: It's on fire. Hope it's ok.
+  decDescription: It's an egg on fire... I hope it's ok...
   decSprite: {fileID: 21300000, guid: 31217db88926b5a428317c5fae2746f5, type: 3}
   baseSprite: {fileID: 21300000, guid: 18527b53194c030428ad3b327566e237, type: 3}
   animations: {fileID: 0}
-  statBoosts: 000000000000000000000000000000000000000000000000
+  statBoosts: 000000000000000000000000000000000000000000000000000000000000000000000000

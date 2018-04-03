@@ -92,7 +92,7 @@ public class battleHandling : MonoBehaviour {
 					increasing = true;
 				}
 			}
-			if(Input.GetKeyDown(KeyCode.Space)){
+			if(Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonUp(0) || Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended){
 				if(powerGauge.value < 16.5 || powerGauge.value > 83.5){
 					multiplier = .75f;
 				}else if(powerGauge.value < 33 || powerGauge.value > 67){

@@ -49,6 +49,13 @@ public static class saveLoadManager {
 			for(int i = 0;i<data.seenMonIDs.Length;i++){
 				fm.seenMon.Add(fm.lists.speciesList.Find(x => x.speciesNumber == data.seenMonIDs[i]) ?? fm.lists.speciesList[0]);
 			}
+			if(data.eggSpecies != 0){
+				fm.AddEgg();
+				fm.egg.species = fm.lists.speciesList.Find(x => x.speciesNumber == data.eggSpecies) ?? fm.lists.speciesList[0];
+				fm.egg.warmth = (float)data.eggWarmth - (float)(DateTime.Now - DateTime.Parse(data.lastLogin)).TotalSeconds%300;
+				fm.egg.hatchTime = data.eggHatchTime - (float)(DateTime.Now - DateTime.Parse(data.lastLogin)).TotalSeconds;
+			}
+
 
 			fm.lastLogin = data.lastLogin;
 
@@ -71,8 +78,8 @@ public static class saveLoadManager {
 		public float[] monHatchTime,monHealthRegen;
 		public string lastLogin;
 		public int[] seenMonIDs;
-		public int stamina;
-		public float stamRegen;
+		public int stamina,eggSpecies;
+		public float stamRegen,eggWarmth,eggHatchTime;
 
 		public PlayerData(fmScript fm){
 			ownedMonNames = new string[fm.ownedMon.Count];
@@ -95,6 +102,15 @@ public static class saveLoadManager {
 			}
 			for(int i = 0;i<seenMonIDs.Length;i++){
 				seenMonIDs[i] = fm.seenMon[i].speciesNumber;
+			}
+			if(fm.egg != null){
+				eggSpecies = fm.egg.species.speciesNumber;
+				eggWarmth = fm.egg.warmth;
+				eggHatchTime = fm.egg.hatchTime;
+			}else{
+				eggSpecies = 0;
+				eggWarmth = 0;
+				eggHatchTime = 0;
 			}
 			lastLogin = DateTime.Now.ToString();
 		}
