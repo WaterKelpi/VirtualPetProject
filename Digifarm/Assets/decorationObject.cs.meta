@@ -1,10 +1,13 @@
 fileFormatVersion: 2
 guid: 56f5de9b82ba1334d9d08a1bd27b8e62
-timeCreated: 1521420332
+timeCreated: 1522725931
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - decSprite: {instanceID: 0}
+  - baseSprite: {fileID: 21300000, guid: 18527b53194c030428ad3b327566e237, type: 3}
+  - animations: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
