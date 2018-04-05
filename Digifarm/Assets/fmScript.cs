@@ -114,9 +114,6 @@ public class fmScript : MonoBehaviour {
 		if(curMonPanel.activeSelf){
 			if(curMon != null){
 				InputField nameInput = GameObject.Find("nameInput").GetComponent<InputField>();
-				if(curMon.species.egg){
-					nameInput.interactable = false;
-				}
 				Text monName = GameObject.Find("monName").GetComponent<Text>();
 				if(nameInput.isFocused){
 					monName.text = nameInput.text+"|";
@@ -146,14 +143,16 @@ public class fmScript : MonoBehaviour {
 				stats.text += "\nSPE: " + curMon.stats[(int)baseMonster.statType.spd];
 				#endregion
 				if(curMon.species.evolutions.Length == 0 || curMon.species.egg && curMon.hatchTime >= 0){
-					curMonPanel.transform.GetChild(0).gameObject.SetActive(false);
+					curMonPanel.transform.GetChild(0).gameObject.GetComponent<Button>().interactable = false;
 				}else{
-					curMonPanel.transform.GetChild(0).gameObject.SetActive(true);
+					curMonPanel.transform.GetChild(0).gameObject.GetComponent<Button>().interactable = true;
 				}
 				if(curMon.species.egg){
-					curMonPanel.transform.GetChild(1).gameObject.SetActive(false);
+					curMonPanel.transform.GetChild(1).gameObject.GetComponent<Button>().interactable = false;
+					curMonPanel.transform.GetChild(2).gameObject.GetComponent<Button>().interactable = false;
 				}else{
-					curMonPanel.transform.GetChild(1).gameObject.SetActive(true);
+					curMonPanel.transform.GetChild(1).gameObject.GetComponent<Button>().interactable = true;
+					curMonPanel.transform.GetChild(2).gameObject.GetComponent<Button>().interactable = true;
 				}
 				if(curMon.species.speciesPortrait != null){
 					curMonPanel.transform.Find("curMonSprite").GetComponent<Image>().sprite = curMon.species.speciesPortrait;
@@ -401,7 +400,6 @@ public class fmScript : MonoBehaviour {
 	public void RefreshOwned(Dropdown list, List<baseMonster> listToPull){
 		list.ClearOptions();
 		options.Clear();
-		Debug.Log(listToPull.Count);
 		foreach(baseMonster mon in listToPull){
 			options.Add(mon.monName);
 		}
